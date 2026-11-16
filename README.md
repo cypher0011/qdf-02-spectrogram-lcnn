@@ -10,20 +10,11 @@
 ![params](https://img.shields.io/badge/params-160k-16a34a)
 ![license](https://img.shields.io/badge/license-MIT-blue)
 
-Model 2 of 5 in the **QDF research series** by **Evan Deep** (Qassim DeepFake Challenge 2026, audio track)
+Model 2 of 5 in the **QDF research series** by **Evan Deep**
 
 [Motivation](#1-motivation) · [Method](#2-method) · [Results](#3-results) · [What the CNN looks at](#4-what-the-cnn-looks-at) · [Limits](#5-limits--next-step) · [Reproduce](#6-reproduce)
 
 </div>
-
----
-
-> ### ملخّص بالعربية
-> في النموذج الأول استخرجنا الميزات الجنائية يدويًا. هنا تركنا **شبكة عصبية تلافيفية** (LCNN، المعمارية الكلاسيكية في مسابقات ASVspoof) تتعلّم بنفسها من **الصورة الطيفية** للصوت، كما نقرأ الطيف بأعيننا في تحديات CTF.
-> * مدرَّبة على الإنجليزية: 16.5% خطأ على الإنجليزية، و**45.0% على العربية** (قريب من التخمين).
-> * نفس الشبكة مدرَّبة على العربية: **4.4%** على العربية (مصري 2.8%، خليجي 5.9%)، و47.8% على الإنجليزية.
-> * **خرائط البروز** تُظهر أن الشبكة الإنجليزية تعتمد على الترددات فوق 7 كيلوهرتز، وهي منطقة تختلف تمامًا بين مولّدات الإنجليزية والعربية.
-> * **الخلاصة:** البيانات العربية ضرورية، لكن شبكة صغيرة من الصفر ما زالت عند 4.4%. **النموذج الثالث** يستخدم نموذج كلام متعدد اللغات مدرَّبًا مسبقًا ليصل إلى 0.77%.
 
 ---
 
@@ -141,7 +132,7 @@ qdf-02-spectrogram-lcnn/
   title  = {QDF-02: Spectrogram LCNN for Deepfake Voice Detection across English and Arabic},
   author = {Evan Deep},
   year   = {2026},
-  note   = {Model 2 of the QDF research series, Qassim DeepFake Challenge}
+  note   = {Model 2 of the QDF research series}
 }
 ```
 Code: MIT. Datasets keep their own licences.
